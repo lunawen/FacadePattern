@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BallOfMud.Services
+﻿namespace BallOfMud.Services
 {
+    // add this class as a Facade to solve the big ball of mud problem
     public class BigClassFacade
     {
         private readonly BigClass _bigClass;
