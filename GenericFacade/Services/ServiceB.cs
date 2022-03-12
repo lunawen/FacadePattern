@@ -11,7 +11,7 @@ namespace GenericFacade.Services
         {
             // do some work
 
-            return "ServiceB string";
+            return "ServiceB";
         }
     }
 }

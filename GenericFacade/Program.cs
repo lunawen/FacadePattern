@@ -1,10 +1,7 @@
-﻿ServiceA serviceA = new ServiceA();
-int sAResult = serviceA.Method2();
+﻿using GenericFacade.Services;
 
-ServiceB serviceB = new ServiceB();
-string sBResult = serviceB.Method2();
+IServiceFacade facade = new ServiceFacade();
 
-ServiceC serviceC = new ServiceC();
-double sCResult = serviceC.Method1();
+Tuple<int, double, string> result = facade.CallFacade();
 
-Console.WriteLine(sAResult + " - " + sCResult + " - " + sBResult);
+Console.WriteLine(result.Item1 + " - " + result.Item2 + " - " + result.Item3);
